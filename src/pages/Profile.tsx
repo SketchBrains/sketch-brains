@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Mail, Phone, Building, Share2, Edit } from 'lucide-react';
+import { User, Mail, Phone, Building, Share2, CreditCard as Edit } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import { Card } from '../components/Card';
