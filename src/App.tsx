@@ -11,12 +11,13 @@ import { Dashboard } from './pages/Dashboard';
 import { Materials } from './pages/Materials';
 import { Profile } from './pages/Profile';
 import { Admin } from './pages/Admin';
-import { AdminEvents } from './pages/AdminEvents';
+import { AdminEventsEnhanced } from './pages/AdminEventsEnhanced';
 import { AdminUsers } from './pages/AdminUsers';
 import { AdminCoupons } from './pages/AdminCoupons';
 import { AdminMaterials } from './pages/AdminMaterials';
 import { AdminReferrals } from './pages/AdminReferrals';
 import { AdminFeedback } from './pages/AdminFeedback';
+import { AdminNotifications } from './pages/AdminNotifications';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -104,7 +105,15 @@ function AppRoutes() {
         path="/admin/events"
         element={
           <ProtectedRoute>
-            <AdminEvents />
+            <AdminEventsEnhanced />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/notifications"
+        element={
+          <ProtectedRoute>
+            <AdminNotifications />
           </ProtectedRoute>
         }
       />
