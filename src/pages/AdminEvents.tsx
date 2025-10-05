@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Plus, Edit, Trash2, Calendar, Users, DollarSign, ArrowLeft } from 'lucide-react';
+import { Plus, CreditCard as Edit, Trash2, Calendar, Users, DollarSign, ArrowLeft } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useAuth } from '../contexts/AuthContext';
 import { Layout } from '../components/Layout';
