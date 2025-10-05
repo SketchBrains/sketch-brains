@@ -11,6 +11,12 @@ import { Dashboard } from './pages/Dashboard';
 import { Materials } from './pages/Materials';
 import { Profile } from './pages/Profile';
 import { Admin } from './pages/Admin';
+import { AdminEvents } from './pages/AdminEvents';
+import { AdminUsers } from './pages/AdminUsers';
+import { AdminCoupons } from './pages/AdminCoupons';
+import { AdminMaterials } from './pages/AdminMaterials';
+import { AdminReferrals } from './pages/AdminReferrals';
+import { AdminFeedback } from './pages/AdminFeedback';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -91,6 +97,54 @@ function AppRoutes() {
         element={
           <ProtectedRoute>
             <Admin />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/events"
+        element={
+          <ProtectedRoute>
+            <AdminEvents />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/users"
+        element={
+          <ProtectedRoute>
+            <AdminUsers />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/coupons"
+        element={
+          <ProtectedRoute>
+            <AdminCoupons />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/materials"
+        element={
+          <ProtectedRoute>
+            <AdminMaterials />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/referrals"
+        element={
+          <ProtectedRoute>
+            <AdminReferrals />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/admin/feedback"
+        element={
+          <ProtectedRoute>
+            <AdminFeedback />
           </ProtectedRoute>
         }
       />

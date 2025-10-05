@@ -105,7 +105,7 @@ export function Admin() {
                 <p className="text-sm text-gray-600 mb-1">Registrations</p>
                 <p className="text-3xl font-bold text-gray-900">{stats.totalRegistrations}</p>
               </div>
-              <TrendingUp className="w-12 h-12 text-purple-600 opacity-80" />
+              <TrendingUp className="w-12 h-12 text-teal-600 opacity-80" />
             </div>
           </Card>
 
@@ -139,7 +139,7 @@ export function Admin() {
 
           <a href="/admin/coupons">
             <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <Gift className="w-12 h-12 text-purple-600 mb-4" />
+              <Gift className="w-12 h-12 text-rose-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Manage Coupons</h3>
               <p className="text-gray-600">Create and manage discount codes and offers</p>
             </Card>
@@ -155,7 +155,7 @@ export function Admin() {
 
           <a href="/admin/referrals">
             <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
-              <Users className="w-12 h-12 text-pink-600 mb-4" />
+              <Users className="w-12 h-12 text-cyan-600 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Referral Analytics</h3>
               <p className="text-gray-600">Track and manage referral program</p>
             </Card>
